@@ -1,0 +1,26 @@
+#user{
+    background-color: #e5e5e5;
+    padding: 64.5px 12.5px 2px;
+    // height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        background: #000;
+        font-weight: bold;
+        text-align: center;
+        line-height: 51px;
+        font-size: 18px;
+    }
+    .common-box{
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 12px;
+    }
+}

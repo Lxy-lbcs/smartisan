@@ -1,0 +1,35 @@
+#user_salesroom .ant-collapse-icon-position-left {
+  border-left: 0;
+}
+
+#user_salesroom .ant-collapse-icon-position-left .ant-collapse-header {
+  padding: 9px 15px !important;
+  font-weight: bold;
+}
+
+#user_salesroom .ant-collapse-icon-position-left .ant-collapse-header i {
+  left: 94% !important;
+}
+
+#user_salesroom .ant-collapse-icon-position-left .ant-collapse-content-box {
+  padding: 0 !important;
+}
+
+#user_salesroom .ant-collapse-icon-position-left .ant-collapse-content-box p {
+  margin: 0 !important;
+}
+
+#user_salesroom .ant-collapse-icon-position-left .ant-collapse-content-box li {
+  padding: 9px 15px;
+  background-color: #f9f9f9;
+  color: #999;
+}
+
+#user_salesroom .ant-collapse-icon-position-left .ant-collapse-content-box li:active {
+  background-color: #ebebeb;
+}
+
+#user_salesroom .bdrtop6 {
+  border-top: 6px solid #e1dfe0;
+}
+/*# sourceMappingURL=style.css.map */

@@ -14,6 +14,7 @@ import Electric from '../Views/CLassify/Electric'
 import Healthy from '../Views/CLassify/Healthy'
 import Part from '../Views/CLassify/Parts'
 import store from '../Views/redux/store'
+import Salesroom from '../Views/My/salesroom/index'
 
 export default (
   <Provider store={store}>
@@ -41,14 +42,8 @@ export default (
             </Classify>
           )} />
           <Route path='/cart' component={Cart} />
-          <Route path='/my' render={() => (
-            <My>
-              <Switch>
-                <Route path='' />
-
-              </Switch>
-            </My>
-          )} />
+          <Route path='/my' component={My} exact/>
+          <Route path='/my/salesroom' component={Salesroom}/>
           <Redirect from='/' to='/film' />
         </Switch>
       </App>

@@ -1,0 +1,32 @@
+#user_salesroom{
+    .ant-collapse-icon-position-left{
+        border-left: 0;
+        .ant-collapse-item{
+            // box-shadow: inset 0 0 .5px #ccc;
+        }
+        .ant-collapse-header{
+            padding: 9px 15px !important;
+            font-weight: bold;
+            i{
+                left: 94% !important;
+            }
+        }
+        .ant-collapse-content-box{
+            padding: 0 !important;
+            p{
+                margin: 0 !important;
+            }
+            li{
+                padding: 9px 15px;
+                background-color: #f9f9f9;
+                color: #999;
+                &:active{
+                    background-color: #ebebeb;
+                }
+            }
+        }
+    }
+    .bdrtop6{
+        border-top: 6px solid #e1dfe0;
+    }
+}
