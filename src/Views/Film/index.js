@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import style from './style.module.css'
+// import style from './style.module.css'
 
 export default class index extends Component {
   render() {
     return (
-      <div className={style.all}>
-        <header className={style.header}>
+      <div>
+        {/* <header className={style.header}>
           <figure className={style.logo}></figure>
         </header>
         <section className={style.section}>
@@ -15,11 +15,11 @@ export default class index extends Component {
           </div>
         </section>
         <main className={style.main}>
-
+          <div className={style.swiper_container}> </div>
         </main>
         <aside className={style.aside}>
 
-        </aside>
+        </aside> */}
       </div>
     )
   }
