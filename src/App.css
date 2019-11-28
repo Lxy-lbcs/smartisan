@@ -16,6 +16,9 @@ body {
 }
 
 .footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 1.7rem;
   background: #fff;
   position: fixed;
   bottom: 0;
@@ -23,8 +26,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 50px;
-  line-height: 50px;
+  height: 2.7rem;
+  line-height: 2.7rem;
 }
 
 .footer li {
@@ -33,11 +36,80 @@ body {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
+  position: relative;
+}
+
+.footer li .icon {
+  display: block;
+  width: 27px;
+  height: 27px;
+  background: #3dc;
+  position: absolute;
+  top: -8px;
+}
+
+.footer li .icon.icon1 {
+  background: url("/Img/footerImg2.png");
+  background-size: 27px 27px;
+  left: -1px;
+}
+
+.footer li .icon.icon2 {
+  background: url("/Img/footerImg4.png");
+  background-size: 27px 27px;
+  left: -1px;
+}
+
+.footer li .icon.icon3 {
+  background: url("/Img/footerImg6.png");
+  background-size: 27px 27px;
+  left: 3px;
+}
+
+.footer li .icon.icon4 {
+  background: url("/Img/footerImg8.png");
+  background-size: 27px 27px;
+  left: 10px;
 }
 
 .footer li a {
   display: inline-block;
-  height: 40px;
-  line-height: 40px;
+  color: #9a9a9a;
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  top: 12px;
+}
+
+.active .icon {
+  display: block !important;
+  width: 27px !important;
+  height: 27px !important;
+  position: absolute !important;
+  top: -8px !important;
+}
+
+.active .icon.icon1 {
+  background: url("/Img/footerImg1.png") !important;
+  background-size: 27px 27px !important;
+  left: -1px !important;
+}
+
+.active .icon.icon2 {
+  background: url("/Img/footerImg3.png") !important;
+  background-size: 27px 27px !important;
+  left: -1px !important;
+}
+
+.active .icon.icon3 {
+  background: url("/Img/footerImg5.png") !important;
+  background-size: 27px 27px !important;
+  left: 3px !important;
+}
+
+.active .icon.icon4 {
+  background: url("/Img/footerImg7.png") !important;
+  background-size: 27px 27px !important;
+  left: 10px !important;
 }
 /*# sourceMappingURL=App.css.map */

@@ -1,4 +1,3 @@
-
 a {
   text-decoration: none;
   color: #000;
@@ -17,26 +16,98 @@ body {
 }
 
 .footer {
+  box-sizing: border-box;
+  padding: 0 1.7rem;
   background: #fff;
   position: fixed;
   bottom: 0;
   display: flex;
   width: 100%;
-  height: 50px;
-  line-height: 50px;
+  height: 2.7rem;
+  line-height: 2.7rem;
 
   li {
     list-style: none;
     flex: 1;
     text-align: center;
+    position: relative;
+
+    .icon {
+      display: block;
+      width: 27px;
+      height: 27px;
+      background: #3dc;
+      position: absolute;
+      top: -8px;
+
+      &.icon1 {
+        background: url('/Img/footerImg2.png');
+        background-size: 27px 27px;
+        left: -1px;
+      }
+
+      &.icon2 {
+        background: url('/Img/footerImg4.png');
+        background-size: 27px 27px;
+        left: -1px;
+      }
+
+      &.icon3 {
+        background: url('/Img/footerImg6.png');
+        background-size: 27px 27px;
+        left: 3px;
+      }
+
+      &.icon4 {
+        background: url('/Img/footerImg8.png');
+        background-size: 27px 27px;
+        left: 10px;
+      }
+
+    }
 
     a {
       display: inline-block;
-      // width: 100%;
-      height: 40px;
-      line-height: 40px;
+      color: #9a9a9a;
+      font-size: 12px;
+      font-weight: 700;
+      position: relative;
+      top: 12px;
+      // background: ;
     }
   }
 }
 
+.active {
+  .icon {
+    display: block !important;
+    width: 27px !important;
+    height: 27px !important;
+    position: absolute !important;
+    top: -8px !important;
 
+    &.icon1 {
+      background: url('/Img/footerImg1.png') !important;
+      background-size: 27px 27px !important;
+      left: -1px !important;
+    }
+
+    &.icon2 {
+      background: url('/Img/footerImg3.png') !important;
+      background-size: 27px 27px !important;
+      left: -1px !important;
+    }
+
+    &.icon3 {
+      background: url('/Img/footerImg5.png') !important;
+      background-size: 27px 27px !important;
+      left: 3px !important;
+    }
+
+    &.icon4 {
+      background: url('/Img/footerImg7.png') !important;
+      background-size: 27px 27px !important;
+      left: 10px !important;
+    }
+  }
+}

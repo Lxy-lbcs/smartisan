@@ -40,7 +40,7 @@ export default (
               </Switch>
             </Classify>
           )} />
-          <Route path='/catr' component={Cart} />
+          <Route path='/cart' component={Cart} />
           <Route path='/my' render={() => (
             <My>
               <Switch>
