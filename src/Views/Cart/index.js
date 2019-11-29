@@ -48,7 +48,7 @@ class index extends Component {
                         }}>
                           <div className={style.cart_item}>
                             <div className={style.checkbox_container}>
-                                <I></I>
+                              <I></I>
                               <div className={style.item_wrapper}>
                                 <a href="/film">
                                   <img src={item.shop_info.ali_image} />
@@ -61,10 +61,23 @@ class index extends Component {
                                 } </p>
                                 <div>
                                   <span></span>
-                                  <span> {'￥' + item.price+ '.00'} </span>
+                                  <span> {'￥' + item.price + '.00'} <i> x 1</i> </span>
                                 </div>
                               </div>
                             </div>
+                            {
+                              item.name.indexOf('坚果') !== -1 ?
+                                <div className={style.warnanty}>
+                                  <div className={style.add_btn}>
+                                    <span></span>
+                                  </div>
+                                  <div className={style.add_detail}>
+                                    <p>购买 坚果 Pro 3 手机保修服务，折算后每天仅需 <span className={style.price_num}>0.41</span>元。 <a href="">进一步了解详情></a> </p>
+                                  </div>
+                                </div>
+                                :
+                                null
+                            }
                           </div>
                         </li>
                       ))
@@ -97,10 +110,11 @@ class index extends Component {
     }).then(res => {
       this.setState({
         cartList: res.data.data.list
-      }, () => {
-        // console.log(item.shop_info.ali_image)
       })
-      console.log(res.data.data.list)
+    })
+
+    Axios({
+      url: ''
     })
   }
 }

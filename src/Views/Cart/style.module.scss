@@ -39,7 +39,7 @@ header {
 
 .main {
   background: #ededed;
-  height: 590px;
+  // height: 590px;
 
   .empty_container {
     text-align: center;
@@ -133,6 +133,9 @@ header {
   }
 
   .item_list {
+    ul{
+      margin-bottom: 80px;
+    }
     .cart_item {
       .checkbox_container {
         position: relative;
@@ -149,6 +152,10 @@ header {
           top: 50%;
           transform: translateY(-50%);
           margin: 0 10px;
+        }
+
+        .show {
+          background-position-y: 2px !important;
         }
 
         .item_wrapper {
@@ -192,13 +199,61 @@ header {
                 font-weight: 700;
                 position: relative;
                 top: -4px;
+
+                i {
+                  color: #999;
+                  position: relative;
+                  padding-left: 5px;
+                  display: inline-block;
+                  font-style: normal;
+                }
               }
             }
           }
         }
+      }
 
-        .show {
-          background-position-y: 2px !important;
+      .warnanty {
+        height: 60px;
+        font-size: .6rem;
+        color: #666;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .add_btn {
+          width: 44px;
+          flex: 0 0 44px;
+          text-align: center;
+
+          span {
+            background: url('/Img/add_btn下载.png');
+            background-size: 100%;
+            position: relative;
+            display: inline-block;
+            width: 23px;
+            height: 23px;
+            padding-top: 1px;
+          }
+        }
+
+        .add_detail {
+
+          padding-right: 15px;
+          overflow: hidden;
+          align-items: center;
+
+          p {
+            padding-right: 20px;
+            line-height: 1.5;
+
+            span {
+              font-weight: 700;             
+            }
+            a{
+              color: #5079d9; 
+            }
+          }
         }
       }
     }

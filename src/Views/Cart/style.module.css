@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   background: #1d1d1d;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1d1d), to(#181818));
@@ -42,7 +43,6 @@ header .header_title {
 
 .main {
   background: #ededed;
-  height: 590px;
 }
 
 .main .empty_container {
@@ -142,6 +142,10 @@ header .header_title {
   line-height: 3rem;
 }
 
+.main .item_list ul {
+  margin-bottom: 80px;
+}
+
 .main .item_list .cart_item .checkbox_container {
   position: relative;
 }
@@ -159,6 +163,10 @@ header .header_title {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   margin: 0 10px;
+}
+
+.main .item_list .cart_item .checkbox_container .show {
+  background-position-y: 2px !important;
 }
 
 .main .item_list .cart_item .checkbox_container .item_wrapper {
@@ -203,7 +211,63 @@ header .header_title {
   top: -4px;
 }
 
-.main .item_list .cart_item .checkbox_container .show {
-  background-position-y: 2px !important;
+.main .item_list .cart_item .checkbox_container .item_info_container > div span:nth-of-type(2) i {
+  color: #999;
+  position: relative;
+  padding-left: 5px;
+  display: inline-block;
+  font-style: normal;
+}
+
+.main .item_list .cart_item .warnanty {
+  height: 60px;
+  font-size: .6rem;
+  color: #666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main .item_list .cart_item .warnanty .add_btn {
+  width: 44px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 44px;
+          flex: 0 0 44px;
+  text-align: center;
+}
+
+.main .item_list .cart_item .warnanty .add_btn span {
+  background: url("/Img/add_btn下载.png");
+  background-size: 100%;
+  position: relative;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  padding-top: 1px;
+}
+
+.main .item_list .cart_item .warnanty .add_detail {
+  padding-right: 15px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .item_list .cart_item .warnanty .add_detail p {
+  padding-right: 20px;
+  line-height: 1.5;
+}
+
+.main .item_list .cart_item .warnanty .add_detail p span {
+  font-weight: 700;
+}
+
+.main .item_list .cart_item .warnanty .add_detail p a {
+  color: #5079d9;
 }
 /*# sourceMappingURL=style.module.css.map */
