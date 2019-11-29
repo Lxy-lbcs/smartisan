@@ -1,0 +1,50 @@
+header#head{
+    width:100%;
+    height:46px;
+    display:flex;
+    flex-direction: column;
+    border-bottom:1px solid #ccc;
+    .toubu{
+        width:344px;
+        height:30px;
+        line-height:30px;
+        margin:8px auto 0;
+        align-items: center;
+        border:1px solid #ccc;
+        border-radius: 10px;
+        padding:0 5px;
+        p{
+            display:inline-block;
+            color:#b3b3b3;
+        }
+    }
+    .cebian{
+        // width:300px;
+        .cebianRouter{
+            position:fixed;
+            left:0;
+            top:47px;
+            width:80px;
+            height:100%;
+            border-right:1px solid #ccc;
+            padding: 1.35rem .3rem 0;
+            z-index:10;
+            background: #fff;
+            li{
+                width:68px;
+                height:24px;
+                color: #d44d44;
+                background: #f6ebea;
+                border-radius: .2rem;
+                margin-bottom: .85rem;
+                text-align: center;
+                line-height: 24px;
+            }
+        }
+    }
+    .content{
+        position:fixed;
+        right:0;
+        top:47px;
+    }
+}

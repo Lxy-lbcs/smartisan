@@ -1,0 +1,22 @@
+div#digital {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div#digital .left {
+  position: fixed;
+  left: 0;
+  top: 47px;
+  width: 80px;
+  height: 100%;
+  border-right: 1px solid #ccc;
+  padding: 1.35rem .3rem 0;
+}
+
+div#digital .left .right {
+  position: fixed;
+  right: 0;
+  background: #f00;
+}
+/*# sourceMappingURL=index.module.css.map */
