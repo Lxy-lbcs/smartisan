@@ -1,4 +1,8 @@
 @charset "UTF-8";
+ul, li {
+  list-style: none;
+}
+
 header {
   background: #1d1d1d;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1d1d), to(#181818));
@@ -142,10 +146,6 @@ header .header_title {
   line-height: 3rem;
 }
 
-.main .item_list ul {
-  margin-bottom: 80px;
-}
-
 .main .item_list .cart_item .checkbox_container {
   position: relative;
 }
@@ -269,5 +269,32 @@ header .header_title {
 
 .main .item_list .cart_item .warnanty .add_detail p a {
   color: #5079d9;
+}
+
+.main .recommend {
+  position: relative;
+  margin-bottom: 67px;
+  background: #fff;
+}
+
+.main .recommend .recommend_title {
+  position: relative;
+  padding: 0 .6rem;
+}
+
+.main .recommend .recommend_title h2 {
+  height: 2rem;
+  line-height: 2rem;
+  font-size: .75rem;
+  font-weight: 700;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main .recommend .recommend_container {
+  overflow: hidden;
+  padding: .9rem .6rem 0;
 }
 /*# sourceMappingURL=style.module.css.map */
