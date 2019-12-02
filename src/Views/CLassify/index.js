@@ -33,19 +33,19 @@ export default class index extends Component {
     // 处理数据的筛选
     switch(id) {
       case "0":
-        return datalist[0]
+        return this.state.datalist[0]
       case "1":
-        return datalist[1]
+        return this.state.datalist[1]
       case "2":
-        return datalist[2]
+        return this.state.datalist[2]
       case "3":
-        return datalist[3]
+        return this.state.datalist[3]
       case "4":
-        return datalist[4]
+        return this.state.datalist[4]
       case "5":
-        return datalist[5]
+        return this.state.datalist[5]
       case "6":
-        return datalist[6]
+        return this.state.datalist[6]
     }
   }
       componentDidMount() {
